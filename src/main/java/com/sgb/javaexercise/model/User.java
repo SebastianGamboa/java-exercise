@@ -1,0 +1,21 @@
+package com.sgb.javaexercise.model;
+
+import java.time.LocalDate;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import lombok.Data;
+
+/**
+ * @author Sebastián Gamboa
+ */
+@Document(collection = "users")
+@Data
+public class User {
+
+    @Id
+    private String id;
+    private String name;
+    private LocalDate birthdate;
+}

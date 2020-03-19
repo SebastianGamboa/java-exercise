@@ -1,0 +1,5 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://sgb-user:user123@sgb-test-xnma5.mongodb.net/db_example?retryWrites=true&w=majority
+    #   database: test
